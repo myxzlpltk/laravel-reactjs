@@ -19,5 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('home', function(){
-    return Inertia::render('Home');
+    return Inertia::render('Home', [
+        'data' => 'This is the data'
+    ]);
 });
