@@ -23,3 +23,9 @@ Route::get('home', function(){
         'data' => 'This is the data'
     ]);
 });
+
+Route::get('about', function(){
+    return Inertia::render('About', [
+        'data' => 'This is about page'
+    ]);
+});

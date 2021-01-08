@@ -3,6 +3,7 @@
 import { InertiaApp } from '@inertiajs/inertia-react'
 import React from 'react'
 import { render } from 'react-dom'
+import {InertiaProgress} from "@inertiajs/progress";
 
 const app = document.getElementById('app')
 
@@ -13,3 +14,5 @@ render(
     />,
     app
 )
+
+InertiaProgress.init()

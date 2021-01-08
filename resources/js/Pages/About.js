@@ -1,5 +1,4 @@
 import React from "react";
-import {InertiaLink} from "@inertiajs/inertia-react";
 
 class App extends React.Component{
 
@@ -25,7 +24,6 @@ class App extends React.Component{
     render() {
         return <div>
             <p>{this.props.data}</p>
-            <InertiaLink href="/about">About</InertiaLink>
             <h1>{this.state.counter}</h1>
             <button onClick={this.counterUp}>Up</button>
         </div>;
